@@ -1,0 +1,107 @@
+.post_modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+.post_modal_content {
+    padding: 15px 15px;
+    background-color: #c1d6e9;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* The Close Button */
+.closeIcon {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeIcon:hover,
+  .closeIcon:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.post_modal_header{
+    background-color: #cbced1;
+}
+.fItem{
+  padding: 15px 20px;
+}
+.post_modal_content{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 200px;
+}
+.post_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+@media (max-width : 1250px) {
+  .header_title{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width : 900px) {
+  .header_title{
+    font-size: 1.1rem;
+  }
+  /* .post_modal_content{
+    width: 85%;
+  } */
+}
+@media (max-width : 600px) {
+  .post_modal_body{
+    font-size: 0.9rem;
+  }
+  .header_title{
+    font-size: 1rem;
+  }
+  .post_modal_content{
+    width: 85%;
+  }
+}
+@media (max-width : 789px) {
+  .post_modal_content{
+    width: 85%;
+  }
+}

@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.appContainer{
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+body{
+  background-color: #fff5;
+  color: #111;
+}
+.dflex{
+  display: flex;
+}
+.fdirCol{
+  flex-direction: column;
+}
+.fdirRow{
+  flex-direction: row;
+}
+section{
+  min-height: 100vh;
+  align-items: center;
+}

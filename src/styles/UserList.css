@@ -1,0 +1,36 @@
+
+.userCardContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userListHeader{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+  }
+  .userCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood
+  }
+  .userCard{
+    flex: 0 0 calc(33.33% - 20px);  
+    /* max-width: calc(33.33% - 20px); */
+    width: 100%;
+    background-color:#c1d6e9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px ;
+  }
+  .userCardleft{
+    cursor: default;
+  }
+
+  @media (max-width:426px) {
+    .userListHeader{
+      font-size: 1.8rem;
+    } 
+  }
